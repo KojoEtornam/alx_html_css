@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./0-style.css">
+    <title>Assignment</title>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <img src="./img/logo.png" height="40" />
+    </div>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#">what we do</a></li>
+            <li><a href="#">our results</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+        <button class="menu-btn" aria-label="Open menu">
+            <span class="menu-icon">&#9776;</span>
+        </button>
+    </nav>
+    <div class="drawer" id="drawer">
+        <button class="close-btn" aria-label="Close menu">&times;</button>
+        <ul>
+            <li><a href="#">what we do</a></li>
+            <li><a href="#">our results</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+    </div>
+</div>
+    <div class="hero">
+        <div class="hero-content">
+        <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+        <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+        <button class="cta-btn">CALL TO ACTION</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+    </div>
+    <div class="services">
+        <div class="notes"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+        <div class="service-items">
+            <div class="item">
+                <img src="./img/sound-frecuency.png" alt="Service 1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="item">
+                <img src="./img/video.png" alt="Service 1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="item">
+                <img src="./img/music.png" alt="Service 1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="item">
+                <img src="./img/hearing.png" alt="Service 1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+<div class="stats">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <div class="stats-items">
+        <div class="stat-item">
+            <h2>+2%</h2>
+            <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="stat-item">
+            <h2>+2%</h2>
+            <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="stat-item">
+            <h2>+2%</h2>
+            <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="stat-item">
+            <h2>+2%</h2>
+            <p>Lorem ipsum dolor</p>
+        </div>
+       
+    </div>
+</div>
+<div class="contact">
+    <form>
+        <input type="text" placeholder="" required>
+        <input type="text" placeholder="" required>
+        <input type="text" placeholder="" required>
+        <button type="submit">CALL TO ACTION</button>
+    </form>
+</div>
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="./img/logo.png" height="40" />
+        </div>
+        <div class="footer-social">
+            <a href="#"><img src="./img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="./img/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="./img/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy;headphones 2020</p>
+    </div>
+</footer>
+    <script>
+        document.querySelector('.menu-btn').onclick = function () {
+            document.getElementById('drawer').style.display = 'flex';
+        };
+        document.querySelector('.close-btn').onclick = function () {
+            document.getElementById('drawer').style.display = 'none';
+        };
+    </script>
+</body>
+</html>

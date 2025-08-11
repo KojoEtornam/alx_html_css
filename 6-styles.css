@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    position: fixed;
+    padding: 0 10rem;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.nav ul li:hover {
+    background-color: #FF6565;
+}
+
+.hero {
+    background-image: url('../headphones/img/background.png'); 
+    color: white;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0px;
+}
+
+.hero p {
+    font-size: 0.8rem;
+}
+
+.hero button {
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.drawer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: #333;
+    color: white;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    padding: 40px 20px 20px 20px;
+    z-index: 1000;
+}
+
+.drawer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.drawer ul li {
+    margin-bottom: 30px;
+}
+
+.drawer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 10rem;
+}
+
+.services .notes {
+    text-align: center;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.service-items {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 20px;
+}
+
+.service-items .item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    padding: 6rem 10rem;
+    background: url('./headphones/img/background.png') no-repeat center center;
+    background-size: cover;
+}
+
+.stats p {
+    text-align: center;
+    width: 50%;
+    margin-top: 10rem;
+}
+
+.stats-items {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 🔁 Updated stat-item: removed image background */
+.stats-items .stat-item {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* 🆕 Added pentagon shape */
+.pentagon {
+    width: 150px;
+    height: 150px;
+    background-color: #FF6565;
+    clip-path: polygon(
+        50% 0%, 
+        100% 38%, 
+        82% 100%, 
+        18% 100%, 
+        0% 38%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.stats-items .stat-item h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.stats-items .stat-item p {
+    font-size: .8rem;
+    width: 100%;
+    margin: 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 10rem;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background-color: transparent;
+}
+
+form button {
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 3rem;
+    width: 30%;
+}
+
+footer {
+    background-color: #071629;
+    color: white;
+    padding: 5rem 10rem 2rem 10rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom {
+    margin-top: 5rem;
+    font-size: 0.8rem;
+    color: #FF6565;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0 20px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}
